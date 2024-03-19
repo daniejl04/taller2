@@ -4,10 +4,11 @@ const router = express.Router()
 
 
 try {
-    
     router.get('/libros', controllers.getlibros)
+    router.post('/newLibro', controllers.createlibros)
 } catch (error) {
     
 }
 
 
+module.exports = router
